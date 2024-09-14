@@ -1,0 +1,60 @@
+:root{
+    --color-dark-blue: rgb(23, 23, 32);
+    --color-white: rgb(255, 255, 255);
+    --color-red-danger: rgb(220, 53, 69);
+    --color-white-opacity: rgba(255, 255, 255,.1);
+    --transition: .5s;
+}
+
+body{
+    font-family: "Kanit", sans-serif;
+    background-color: var(--color-dark-blue);
+}
+
+.bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 70vh;
+    background-image: url(/images/robopaisagem.jpg);
+    background-attachment: fixed;
+}
+
+.navbar{ 
+    background-color: var(--color-dark-blue);
+}
+
+a{
+    color: var(--color-white);
+    transition: var(--transition);
+}
+
+a:hover{
+    color: var(--color-red-danger);
+}
+
+i{
+    color: var(--color-white);
+}
+
+p{
+    margin: 0;
+}
+
+.section-padding{
+    padding: 1.5rem 10rem;
+}
+
+.bg-grid{
+    background-color: var(--color-white-opacity);
+}
+
+.div-size{
+    min-width: 33.3%;
+    max-width: 33.3%;
+}
+
+.zoom:hover{
+    scale: 1.1;
+    transition: var(--transition);
+}

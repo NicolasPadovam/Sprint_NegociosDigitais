@@ -1,0 +1,61 @@
+:root{
+    --color-dark-blue: rgb(23, 23, 32);
+    --color-white: rgb(255, 255, 255);
+    --color-red-danger: rgb(220, 53, 69);
+    --color-white-opacity: rgba(255, 255, 255,.1);
+    --transition: .5s;
+}
+
+body{
+    font-family: "Kanit", sans-serif;
+    background-color: var(--color-dark-blue);
+}
+
+.bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 70vh;
+    background-image: url(../images/robopaisagem.jpg);
+    background-attachment: fixed;
+}
+
+.navbar{ 
+    background-color: var(--color-dark-blue);
+    z-index: 1000;
+}
+
+a{
+    color: var(--color-white);
+    transition: var(--transition);
+}
+
+a:hover{
+    color: var(--color-red-danger);
+}
+
+i{
+    color: var(--color-white);
+}
+
+.section-padding{
+    padding: 1.5rem 10rem;
+}
+
+.bg-opacity{
+    background-color: var(--color-white-opacity);
+}
+
+.accordion{
+    --bs-accordion-btn-bg: var(--color-dark-blue);
+    --bs-accordion-bg: var(--color-dark-blue);
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-bg: var(--color-dark-blue);
+}
+
+.accordion-card{
+    --bs-accordion-btn-bg: var(--color-white-opacity);
+    --bs-accordion-bg: var(--color-white-opacity);
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-bg: var(--color-white-opacity);
+}
